@@ -28,8 +28,10 @@ Esto es lo principal que podremos usar ya que lo demas no veo necesario usarlo, 
 <br>
 <br>
 <h3>Integrantes: </h3>
-Víctor González Aragón, lider del grupo elejido en clase por sorteo. (victorgonzalez27704@protonmail.com)
+Víctor González Aragón, lider del grupo elejido en clase por sorteo. (victorgonzalez27704@protonmail.com) 
+<br>
 Juan Carlos Solares Cabrera. (juancarlossolares298@gmail.com)
+<br>
 Pedro Briz Arnadillo. (pedrobriz22@gmail.com)
 
 
