@@ -22,3 +22,15 @@ Básicamente un pull request es una petición para integrar nuestras propuestas 
 <br>
 
 Esto es lo principal que podremos usar ya que lo demas no veo necesario usarlo, os recomiendo veros algun tutorial de GitHub y GitHub desktop para entender mejor el funcionamiento de esta herramienta tan util y poder hacer un trabajo mas eficiente de una manera mas facil 
+
+
+<br>
+<br>
+<br>
+<h3>Integrantes: </h3>
+Víctor González Aragón, lider del grupo elejido en clase por sorteo. (victorgonzalez27704@protonmail.com)
+Juan Carlos Solares Cabrera. (juancarlossolares298@gmail.com)
+Pedro Briz Arnadillo. (pedrobriz22@gmail.com)
+
+
+
