@@ -1,6 +1,12 @@
 <h2>Este es un documento no descargable, es decir que solo lo podreis leer desde aqui</h2>
 
-<p>Este documento esta dedicado a dar informacion a cerca de los repositorios y diferentes opciones del proyecto 'sex shop'</p>
+<p>Este documento esta dedicado a dar informacion a cerca del proyecto 'sex shop'</p>
+<br>
+Este proyeto se basa en hacer una pagina web, una base de datos de esta y el codigo necesario para la hacer la conexion.
+<br>
+La gracia de este ejercicio es poder registrarse, inicar sesion, comprar productos y demas de una manera funcional y optima.
+
+
 
 <br>
 <br>
@@ -11,13 +17,12 @@
 <br>
 <h3>Issues: </h3>
 <p>En <b>Issues </b>tenemos podemos añadir todos los errores que tengamos para poder solucionarlos, por ejemplo yo no se solucionar un problema y lo comparto por issues par ver si vosotros podeis solucionarlo</p>
-</div>
 <br>
 <h3>Pull request: </h3>
 Los <b>pull request </b>permiten no solo llevar de forma más ordenada las tareas en la etapa del desarrollo, sino también crear propuestas o cambios que puedan ser integrados posteriormente a dicho proyecto.
 
 Básicamente un pull request es una petición para integrar nuestras propuestas o cambios de código a un proyecto.
-
+</div>
 <br>
 <br>
 
