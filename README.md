@@ -1,5 +1,3 @@
-<h2>Este es un documento no descargable, es decir que solo lo podreis leer desde aqui</h2>
-
 <p>Este documento esta dedicado a dar informacion a cerca del proyecto 'sex shop'</p>
 <br>
 Este proyeto se basa en hacer una pagina web, una base de datos de esta y el codigo necesario para la hacer la conexion.
