@@ -170,7 +170,7 @@ body {
 }
 
 .wrapper {
-	max-width: 1900px;
+	max-width: 1950px;
 	margin: 0 auto;
 }
 
@@ -244,8 +244,7 @@ body {
 }
 
 @media only screen and (min-width: 1200px) {
-	.slide {
-	}
+	
 
 	.caption {
 		font-size: 96px;
