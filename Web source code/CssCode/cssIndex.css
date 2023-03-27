@@ -286,54 +286,8 @@ footer{
   margin:0px 30px;
   }
 
-  
+  .formulario{
 
-  input[type=text], select, textarea {
-    width: 100%; 
-    padding: 20px; 
-    margin-bottom: 16px; 
-    border: 1px solid #F0EA00; 
+
+  border-color: #FFDE59;
   }
-  
-  
-  input[type=submit] {
-    background-color: #F0EA00;
-    color: white;
-    padding: 5px;
-    border: 0;
-  
-  }
-  input[type=submit] {
-    background-color: #F0EA00;
-    color: white;
-    padding: 5px;
-    border: 0;
-  
-  }
-  
-  input[type=submit] {
-    background-color: #F0EA00;
-    color: white;
-    padding: 5px;
-    border: 0;
-  
-  }
-  
-  
-  .derecha{text-align-right}
-  .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
-  .anchura{
-    margin-left:1680px;
-    text-align:right;
-    width:200px;
-  }
-  
-  .arriba2{
-    
-    padding-top:1px;
-  }
-  
