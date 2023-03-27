@@ -291,3 +291,11 @@ footer{
 
   border-color: #FFDE59;
   }
+
+  .infoSN{
+    height: auto;
+    padding-top: 670px;
+  }
+  .infoSN p{
+    text-align: left;
+  }
