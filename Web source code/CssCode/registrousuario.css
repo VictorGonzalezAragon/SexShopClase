@@ -286,16 +286,21 @@ footer{
   margin:0px 30px;
   }
 
-  .formulario{
-
-
-  border-color: #FFDE59;
+  .fueraform{
+    background-color: #141223;
+    margin-top: 40px;
+    padding: 20px;
   }
-
-  .infoSN{
-    height: auto;
-    padding-top: 670px;
-  }
-  .infoSN p{
-    text-align: left;
-  }
+  
+    .formulario{
+    background-color: #FFDE59;
+    margin: 50px;
+    text-align:center;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px rgb(78, 69, 3);
+    }
+  
+    .formulario form{
+      padding: 20px 0;
+    }
+  
