@@ -182,6 +182,7 @@ body {
 	position: relative;
 	display: flex;
 	overflow: hidden;
+  padding-top: 30px;
 }
 
 .slide {
