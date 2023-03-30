@@ -121,7 +121,7 @@ display:inline-block;
 align-items: center;
 background-color: #141223;
 height: 400px;
-margin-top:700px;
+margin-top: 40px;
 }
 .sobreNosotros div{
     margin: 20px 30px;
@@ -294,8 +294,27 @@ footer{
 
   .infoSN{
     height: auto;
-    padding-top: 670px;
+    padding-top: 0px;
   }
   .infoSN p{
     text-align: left;
+  }
+
+
+  .imagenes{
+    padding-top: 670px;
+    width: 300px;
+    height: 300px;
+    font-size: 15px;
+    padding-left: 170px;
+    display: inline-block
+    
+
+  }
+
+  .imagenes img{
+    width: 300px;
+    height: 300px;
+    display: inline-block
+
   }
