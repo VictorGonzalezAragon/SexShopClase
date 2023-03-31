@@ -18,7 +18,7 @@ public class DaoUsuario {
    private static final Logger log = Logger.getLogger(DaoUsuario.class
             .getPackage().getName());
    
-   private static void insertarUsuario (String nombre, String apellido1, String apellido2, String email, String contraseña) throws ClassNotFoundException, SQLException{
+   public static void insertarUsuario (String nombre, String apellido1, String apellido2, String email, String contraseña) throws ClassNotFoundException, SQLException{
        
       Connection conexion = Conexion.conectar(); 
       Statement stm = conexion.createStatement();
