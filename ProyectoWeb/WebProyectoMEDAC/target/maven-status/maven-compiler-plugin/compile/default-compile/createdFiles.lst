@@ -1,7 +1,7 @@
-dao\DaoAdministrador.class
+daoUsuario\DaoUsuario.class
 com\mycompany\webproyectomedac\JakartaRestConfiguration.class
-controladorUsuario\ControladorServletUsuario.class
 principal\Principal.class
 com\mycompany\webproyectomedac\resources\JakartaEE91Resource.class
 conexion\Conexion.class
+daoAdministrador\DaoAdministrador.class
 conexion\CargarDriver.class
