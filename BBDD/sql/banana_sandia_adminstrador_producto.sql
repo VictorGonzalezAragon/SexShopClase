@@ -16,30 +16,29 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `adminstrador`
+-- Table structure for table `adminstrador/producto`
 --
 
-DROP TABLE IF EXISTS `adminstrador`;
+DROP TABLE IF EXISTS `adminstrador/producto`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `adminstrador` (
-  `id_administrador` int NOT NULL AUTO_INCREMENT,
-  `nombre_adm` varchar(45) NOT NULL,
-  `apellido1_adm` varchar(45) NOT NULL,
-  `apellido2_adm` varchar(45) NOT NULL,
-  `email_adm` varchar(45) NOT NULL,
-  `contraseña_adm` varchar(45) NOT NULL,
-  PRIMARY KEY (`id_administrador`)
+CREATE TABLE `adminstrador/producto` (
+  `id_administrador` int NOT NULL,
+  `id_producto` int NOT NULL,
+  `fechaAccion` varchar(45) NOT NULL,
+  PRIMARY KEY (`id_administrador`,`id_producto`),
+  KEY `id_administrador_idx` (`id_administrador`),
+  KEY `id_producto_idx` (`id_producto`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `adminstrador`
+-- Dumping data for table `adminstrador/producto`
 --
 
-LOCK TABLES `adminstrador` WRITE;
-/*!40000 ALTER TABLE `adminstrador` DISABLE KEYS */;
-/*!40000 ALTER TABLE `adminstrador` ENABLE KEYS */;
+LOCK TABLES `adminstrador/producto` WRITE;
+/*!40000 ALTER TABLE `adminstrador/producto` DISABLE KEYS */;
+/*!40000 ALTER TABLE `adminstrador/producto` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -51,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-04-18 13:42:47
+-- Dump completed on 2023-04-19  9:09:23

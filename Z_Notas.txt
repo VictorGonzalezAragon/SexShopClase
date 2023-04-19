@@ -1,0 +1,3 @@
+En la Base de datos, crear una entidad que sea direcciones de envio y en la entidad compra, cabiar el VARCHAR(45) de direccion de envio por el id de la nueva entidad.
+
+Tambien añadir mas propiedades en compra relacionadas con el tema de dinero para tener un registro.

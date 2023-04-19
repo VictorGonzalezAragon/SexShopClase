@@ -16,28 +16,30 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `producto/compra`
+-- Table structure for table `compra`
 --
 
-DROP TABLE IF EXISTS `producto/compra`;
+DROP TABLE IF EXISTS `compra`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `producto/compra` (
-  `id_producto` int NOT NULL,
-  `id_compra` int NOT NULL,
-  PRIMARY KEY (`id_producto`,`id_compra`),
-  KEY `id_producto_idx` (`id_producto`) /*!80000 INVISIBLE */,
-  KEY `id_compra_idx` (`id_compra`)
+CREATE TABLE `compra` (
+  `id_compra` int NOT NULL AUTO_INCREMENT,
+  `fecha_compra` date NOT NULL,
+  `precioTotal_compra` double NOT NULL,
+  `direccionEnvio_compra` varchar(45) NOT NULL,
+  `id_usuario` int NOT NULL,
+  PRIMARY KEY (`id_compra`),
+  KEY `id_cliente_idx` (`id_usuario`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `producto/compra`
+-- Dumping data for table `compra`
 --
 
-LOCK TABLES `producto/compra` WRITE;
-/*!40000 ALTER TABLE `producto/compra` DISABLE KEYS */;
-/*!40000 ALTER TABLE `producto/compra` ENABLE KEYS */;
+LOCK TABLES `compra` WRITE;
+/*!40000 ALTER TABLE `compra` DISABLE KEYS */;
+/*!40000 ALTER TABLE `compra` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -49,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-04-18 13:42:47
+-- Dump completed on 2023-04-19  9:09:23
