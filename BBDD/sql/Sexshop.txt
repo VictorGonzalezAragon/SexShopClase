@@ -1,0 +1,137 @@
+DROP DATABASE IF EXISTS `banana_sandia`;
+
+CREATE  DATABASE `banana_sandia` CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
+
+USE banana_sandia;
+
+
+
+
+
+DROP TABLE IF EXISTS `administrador`;
+
+CREATE TABLE `administrador` (
+  `id_adm` int NOT NULL AUTO_INCREMENT,
+  `nombre_adm` varchar(45) NOT NULL,
+  `apellido1_adm` varchar(45) NOT NULL,
+  `apellido2_adm` varchar(45) NOT NULL,
+  `email_adm` varchar(45) NOT NULL,
+  `contraseña_adm` varchar(45) NOT NULL,
+  PRIMARY KEY (`id_adm`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+
+LOCK TABLES `administrador` WRITE;
+
+INSERT INTO `administrador` VALUES (1,'Pedro','Briz','Arnadillo','pedrobriz22@gmail.com','miau'),(2,'Victor','Gonzalez','Aragón','victorgonzalez@gmail.com','grrr'),(3,'Juan Carlos','Solares','Cabrera','juancarlossolares@gmail.com','guau');
+
+UNLOCK TABLES;
+
+DROP TABLE IF EXISTS `adminstrador/producto`;
+
+CREATE TABLE `adminstrador/producto` (
+  `id_adm` int NOT NULL,
+  `id_producto` int NOT NULL,
+  `fechaAccion` datetime NOT NULL,
+  PRIMARY KEY (`id_administrador`,`id_producto`),
+  KEY `id_administrador_idx` (`id_administrador`),
+  KEY `id_producto_idx` (`id_producto`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+LOCK TABLES `adminstrador/producto` WRITE;
+
+INSERT INTO `adminstrador/producto` VALUES (1,1,'2005-11-10 00:00:00'),(2,2,'2014-05-23 00:00:00'),(3,3,'2019-09-11 00:00:00');
+
+UNLOCK TABLES;
+
+DROP TABLE IF EXISTS `categoria`;
+
+CREATE TABLE `categoria` (
+  `id_categoría` int NOT NULL AUTO_INCREMENT,
+  `nombre_categoria` varchar(45) NOT NULL,
+  PRIMARY KEY (`id_categoría`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+LOCK TABLES `categoria` WRITE;
+
+INSERT INTO `categoria` VALUES (1,'mujer'),(2,'hombre'),(3,'pareja');
+
+UNLOCK TABLES;
+
+DROP TABLE IF EXISTS `compra`;
+
+CREATE TABLE `compra` (
+  `id_compra` int NOT NULL AUTO_INCREMENT,
+  `fecha_compra` date NOT NULL,
+  `precioTotal_compra` double NOT NULL,
+  `direccionEnvio_compra` varchar(45) NOT NULL,
+  `id_usuario` int NOT NULL,
+  PRIMARY KEY (`id_compra`),
+  KEY `id_cliente_idx` (`id_usuario`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+LOCK TABLES `compra` WRITE;
+
+INSERT INTO `compra` VALUES (1,'2006-12-06',50,'Calle Asín y Palacios 25',1),(2,'2008-11-06',90,'Calle Romareda 11',2),(3,'2019-09-06',110,'Calle Arzobispo 54',3);
+
+UNLOCK TABLES;
+
+DROP TABLE IF EXISTS `producto`;
+
+CREATE TABLE `producto` (
+  `id_producto` int NOT NULL AUTO_INCREMENT,
+  `nombre_producto` varchar(30) NOT NULL,
+  `precio_producto` double NOT NULL,
+  `stockDisponible_producto` int NOT NULL,
+  `descripción_producto` varchar(100) NOT NULL,
+  `uds_vendidas` int NOT NULL,
+  `id_categoría` int NOT NULL,
+  PRIMARY KEY (`id_producto`),
+  KEY `id_categoria_idx` (`id_categoría`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+LOCK TABLES `producto` WRITE;
+
+INSERT INTO `producto` VALUES (1,'Satisfyer 1500 X',60,13,'Satisfyer de la mejor calidad',69,1),(2,'Anillo vibrador 98',40,53,'Con más de 15 velocidades',15,2),(3,'Esposas secreto prohibido',18,39,'BDSM free',4,3);
+
+UNLOCK TABLES;
+
+DROP TABLE IF EXISTS `producto/compra`;
+
+CREATE TABLE `producto/compra` (
+  `id_producto` int NOT NULL,
+  `id_compra` int NOT NULL,
+  `cantidad_producto` int NOT NULL,
+  PRIMARY KEY (`id_producto`,`id_compra`),
+  KEY `id_producto_idx` (`id_producto`) /*!80000 INVISIBLE */,
+  KEY `id_compra_idx` (`id_compra`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+LOCK TABLES `producto/compra` WRITE;
+
+INSERT INTO `producto/compra` VALUES (1,1,2),(2,2,5),(3,3,1);
+
+UNLOCK TABLES;
+
+
+
+DROP TABLE IF EXISTS `usuario`;
+
+CREATE TABLE `usuario` (
+  `id_usuario` int NOT NULL AUTO_INCREMENT,
+  `nombre_usuario` varchar(45) NOT NULL,
+  `apellido1_usuario` varchar(45) NOT NULL,
+  `apellido2_usuario` varchar(45) NOT NULL,
+  `email_usuario` varchar(45) NOT NULL,
+  `contraseña_usuario` varchar(45) NOT NULL,
+  PRIMARY KEY (`id_usuario`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+LOCK TABLES `usuario` WRITE;
+
+INSERT INTO `usuario` VALUES (1,'Pedro','Briz','Arnadillo','pedrobriz22@gmail.com','miau'),(2,'Victor','Gonzalez','Aragón','victorgonzalez@gmail.com','grrr'),(3,'Juan Carlos','Solares','Cabrera','juancarlossolares@gmail.com','guau');
+
+UNLOCK TABLES;
