@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../CssCode/altasproducto.css" rel="stylesheet" type="text/css">
+        <title>Altas de Producto</title>
+    <body>
+        <!--CABECERA DE PROYECTO-->
+        <div class="eslogan">
+            <p>No es obsceno, es natural</p>
+        </div >
+
+        <header>
+            <div class="logo">
+                <a href="inicio.html"><img src="../Multimedia/Logo/LogoSolo.png" alt="logo"></a>
+            </div>
+            <div class="botonera">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">Gestión</a>
+                            <ul>
+                                <li><a href="altasproducto.html">Altas</a></li>
+                                <li><a href="bajasproducto.html">Bajas</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="Login.html">Login</a>
+                        </li>
+                        <li>
+                            <a href="registrousuario.html">Registro</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+
+
+        </header>
+
+        <!--CUERPO DEL PROYECTO-->
+        <div class="fueraform">
+            <div class="formulario">
+                <form action="/Controlado   rServletProducto" method="post">
+                    <input type="hidden" name="action" value="insertar_producto">   
+
+                    <label for="id_producto">Id del producto:</label> 
+
+                    <input type="number" name="id_producto" id="id_producto" required>
+
+                    <br/> <br/>
+
+                    <label for="nombre_producto">Nombre del producto: </label>
+
+                    <input type="text" name="nombre_producto" id="nombre_producto" required>
+
+                    <br/> <br/>
+
+                    <label for="precio_producto">Precio: </label>
+
+                    <input type="text" name="precio_producto" id="precio_producto" required>
+
+                    <br/> <br/>
+
+                    <label for="stockDisponible_producto">Cantidad en Stock: </label>
+
+                    <input type="number" name="stockDisponible_producto" id="stockDisponible_producto" required>
+
+                    <br/> <br/>
+
+                    <label for="categoria_producto">Categoría: </label>
+
+                    <input type="text" name="categoria_producto" id="categoria_producto" required>
+
+                    <br/> <br/>
+
+                    <label for="descripcion_producto">Descripción del producto</label>
+                    <br/> <br/>
+                    <textarea id="id" name="descripcion_producto" rows="5" cols="50" required></textarea>
+
+                    <br/> <br/>
+
+                    <input type="submit" value="Enviar">
+
+                </form>
+            </div>
+        </div>
+
+
+
+        <footer>
+            <div class="row">
+
+            </div>
+
+            <div class="row">
+                <ul>
+                    <li><a href="contacto.html">Contactanos</a></li>
+                    <li><a href="#">Redes Sociales</a></li>
+                    <li><a href="#">Seguimiento de envío</a></li>
+                    <li><a href="#">Terminos y condiciones</a></li>
+                    <li><a href="#">Reseñas</a></li>
+                </ul>
+            </div>
+
+            <div class="row">
+                Banana-Sandía 2023©
+            </div>
+
+        </footer>
+
+
+
+
+
+
+</body>
+</html>
